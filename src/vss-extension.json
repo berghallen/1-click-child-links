@@ -1,14 +1,14 @@
 {
     "manifestVersion": 1.0,    
-    "id": "vsts-work-item-one-click-child-links",    
-    "version": "0.12.1",
-    "name": "1-Click Child-Links",
-    "description": "Add Child-Links from pre-defined templates with a single click.",
+    "id": "vsts-work-item-one-click-testedby-links",    
+    "version": "0.1.1",
+    "name": "1-Click TestedBy-Links",
+    "description": "Add TestedBy-Links from pre-defined templates with a single click.",
     "public": false,
-    "publisher": "ruifig",
+    "publisher": "berghallen",
     "repository": {
         "type": "git",
-        "uri": "https://github.com/figueiredorui/1-click-child-links"
+        "uri": "https://github.com/berghallen/1-click-child-links"
     },
     "icons": {
         "default": "img/one-click.png"
@@ -64,21 +64,21 @@
     ],
     "contributions": [
         {
-            "id": "create-child-task-work-item-button",
+            "id": "create-testedby-task-work-item-button",
             "type": "ms.vss-web.action",
-            "description": "1-Click Child-Links",
+            "description": "1-Click TestedBy-Links",
             "targets": [
                 "ms.vss-work-web.work-item-toolbar-menu", 
                 "ms.vss-work-web.backlog-item-menu",
                 "ms.vss-work-web.work-item-context-menu"
             ],
             "properties": {
-                "text": " 1-Click Child-Links",
-                "title": "1-Click Child-Links",
-                "toolbarText": "1-Click Child-Links",                
+                "text": " 1-Click TestedBy-Links",
+                "title": "1-Click TestedBy-Links",
+                "toolbarText": "1-Click TestedBy-Links",                
                 "icon": "img/one-click16.png",
                 "uri": "toolbar.html",
-                "registeredObjectId": "create-child-task-work-item-button"
+                "registeredObjectId": "create-testedby-task-work-item-button"
             }
         }
     ]

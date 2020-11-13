@@ -135,7 +135,7 @@ define(["TFS/WorkItemTracking/Services", "TFS/WorkItemTracking/RestClient", "TFS
                     if (service != null) {
                         service.addWorkItemRelations([
                             {
-                                rel: "System.LinkTypes.Hierarchy-Forward",
+                                rel: "Microsoft.VSTS.Common.TestedBy-Forward",
                                 url: response.url,
                             }]);
                         //Save
@@ -152,7 +152,7 @@ define(["TFS/WorkItemTracking/Services", "TFS/WorkItemTracking/RestClient", "TFS
                             op: "add",
                             path: '/relations/-',
                             value: {
-                                rel: "System.LinkTypes.Hierarchy-Forward",
+                                rel: "Microsoft.VSTS.Common.TestedBy-Forward",
                                 url: response.url,
                                 attributes: {
                                     isLocked: false,
